@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Сбербанк Онлайн</title>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="theme-color" content="#068542">
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- link -->
+	<link rel="stylesheet" href="style/main.css">
+	<!-- script -->
+	<script src="script/main.js" defer></script>
+	<script src="script/jquery.js"></script>
+	<script src="script/mainfile" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+
+	<!-- 1 страница -->
+
+	<section class="sec1">
+
+		<div class="row">
+			<div class="header-1">
+				<div class="exit">
+					<div class="arrow-left-1"></div>
+				</div>
+				<div class="transfer">
+					<p class="perevod">Переводы</p>
+				</div>
+			</div>
+				<div class="center-panel"></div>
+		</div>
+
+		<div class="block">
+			<div class="phone-image"></div>
+
+			<p class="phone-number-1">Телефон получателя</p>
+
+			<input id="phone-number" class="phone-1" value="+7 (961)416-12-37" placeholder="+7 (___)___-__-__">
+
+			<div id="click-button1">
+				<button class="button1" onclick="number()"></button>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- 2 страница -->
+
+	<section class="sec2">
+		<div class="nomey-row">
+			<div class="arrow-left-2"></div>
+
+			<p id="money-number"></p>
+			<p class="money">Сумма</p>
+
+			<input type="text" id="money-phone" value="50">
+
+			<div id="click-button2">
+				<button class="button2" onclick="money()"></button>
+			</div>
+		</div>
+
+		<div class="white-block"></div>
+	</section>
+
+	<!-- 3 страница -->
+
+	<section class="sec3">
+		<p class="form-int"><input type="text" id="fio-memory" value="мария виссарионовна ч."></p>
+		<p class="form-int" id="money-confirm">сумма перевода</p>
+		<p class="form-int"><input type="text" id="number-cart" value="427652******9911"></p>
+		<p class="form-int" id="money-number-user">телефон</p>
+		
+		<div id="click-button3">
+			<button onclick="personal()">Перевести</button>
+		</div>
+	</section>
+
+	<!-- 4 страница -->
+
+	<section class="sec4">
+		<div class="phone-transfer">
+			<div class="cap">
+
+					<div class="header">
+						<div class="exit">
+							<div class="arrow-left"></div>
+						</div>
+						<div class="transfer">
+							<p class="transfer-text">Платеж выполнен</p>
+						</div>
+
+					</div>
+
+					<div class="transfer-phone">
+						<p id="place_1"></p>
+						<p id="place_2"></p>
+					</div>
+
+					<div class="cap-black"></div>
+
+			</div>
+
+			<div class="content">
+				
+				<div class="content-image"></div>
+				<div id="operation"></div>
+				<div class="operation-image">
+					<div class="container">
+
+						<p class="fio top-text">ФИО получателя</p>
+						<p id="fio-name" class="fio-name bottom-text"></p>
+
+						<p class="amount top-text">Сумма в валюте списания</p>
+						<p id="amount-money" class="amount-money bottom-text"></p>
+
+						<p class="commission top-text">Комиссия</p>
+						<p class="commission-money bottom-text">0,00 ₽</p>
+
+						<p class="date top-text">Плановая дата исполнения</p>
+						<p id="date-number" class="date-number bottom-text"></p>
+
+						<p class="sms top-text">Статус SMS-сообщения</p>
+						<p class="sms-sent bottom-text">сообщение будет отправлено</p>
+
+						<p class="cart top-text">Номер счета/карты получателя</p>
+						<p id="cart-number" class="cart-number bottom-text"></p>
+
+						<p class="phone top-text">Номер телефона получателя</p>
+						<p id="number-phone" style="margin-bottom: 42px;" class="phone-number bottom-text"></p>
+
+						<p class="write-off-account top-text">Счет списания</p>
+						<p class="masterCart">MasterCart Mass</p>
+						<p id="masterMass" class="masterMass"></p>
+
+						<p class="document top-text">Номер документа</p>
+						<p id="document-number" class="document-number bottom-text"></p>
+
+						<p class="date top-text">Дата документа</p>
+						<p id="date-document" class="date-document bottom-text"></p>
+
+					</div>
+				</div>
+				<footer></footer>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
